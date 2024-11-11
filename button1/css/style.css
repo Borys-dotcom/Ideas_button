@@ -17,13 +17,12 @@ body{
 .iButton::after{
     content: " ";
     position: absolute;
-    height: 40%;
-    width: 40%;
-    /* aspect-ratio: 1/1; */
-    /* background-color: orange; */
-    border: 2px solid orange;
-    right: -3px;
-    bottom: -3px;
+    height: 30%;
+    width: 30%;
+    border: 4px orange;
+    border-style: none solid solid none;
+    right: -6px;
+    bottom: -6px;
     transition: all 0.5s ease-in-out;
     z-index: -1;
 }
@@ -31,19 +30,18 @@ body{
 .iButton::before{
     content: " ";
     position: absolute;
-    height: 40%;
-    width: 40%;
-    /* aspect-ratio: 1/1; */
-    /* background-color: orange; */
-    border: 2px solid orange;
-    left: -3px;
-    top: -3px;
+    height: 30%;
+    width: 30%;
+    border: 4px orange;
+    border-style: solid none none solid;
+    left: -6px;
+    top: -6px;
     transition: all 0.5s ease-in-out;
     z-index: -1;
 }
 
 .iButton:hover::before,
 .iButton:hover::after{
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
 }
